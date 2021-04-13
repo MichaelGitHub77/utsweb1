@@ -1,17 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Input
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  Judul :  <input type="text" [(ngModel)]="Judul">
+  <br>
+  Isi Note :  <input type="text" [(ngModel)]="Isi">
+  <br>
+  Tanggal :  <input type="date" [(ngModel)]="Tanggal">
+  <br>
+  Nilai : <input type="text" [(ngModel)]="Nilai">
+  <br>
+  <ion-button (click)="TambahFoto()">Add Photo</ion-button>
+  <ion-button (click)="simpan()">SIMPAN</ion-button>
 </ion-content>
