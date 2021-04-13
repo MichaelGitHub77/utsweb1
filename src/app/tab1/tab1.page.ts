@@ -36,6 +36,17 @@ export class Tab1Page {
       nilai : this.Nilai
       })
     }
+  Edit(){
+    this.isiDataColl.doc(this.Judul). set({
+      judul : this.Judul,
+       isi : this.Isi,
+      tanggal : this.Tanggal,
+      nilai : this.Nilai
+      })
+     }
+  delete(){
+    this.isiDataColl.doc(this.Judul). delete()
+    }
 }
 interface data{
   judul : string,
